@@ -1,0 +1,54 @@
+public class Main {
+    int val;
+    Main left, right;
+
+    Main(int value) {
+        val = value;
+        left = null;
+        right = null;
+    }
+
+    public void printHeadNodes(Main node) {
+        if (node != null) {
+            System.out.println("Head node of subtree rooted at " + node.val + " is " + findRoot(node).val);
+            printHeadNodes(node.left);
+            printHeadNodes(node.right);
+        }
+    }
+
+    private Main findRoot(Main node) {
+        while (node.left != null || node.right != null) {
+            if (node.left != null)
+                node = node.left;
+            else
+                node = node.right;
+        }
+        return node;
+    }
+
+    public static void main(String[] args) {
+        Main root = new Main(1);
+        root.left = new Main(2);
+        root.right = new Main(3);
+        root.left.left = new Main(4);
+        root.left.right = new Main(5);
+        root.right.left = new Main(6);
+        root.right.right = new Main(7);
+
+        // Print head nodes
+        root.printHeadNodes(root);
+    }
+
+    public static void main(String[] args) {
+        Main root = new Main(1);
+        root.left = new Main(2);
+        root.right = new Main(3);
+        root.left.left = new Main(4);
+        root.left.right = new Main(5);
+        root.right.left = new Main(6);
+        root.right.right = new Main(7);
+
+        // Print head nodes
+        root.printHeadNodes(root);
+    }
+}
