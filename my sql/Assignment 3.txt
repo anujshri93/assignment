@@ -1,0 +1,12 @@
+Anuj shrivastava
+Assignment –3
+
+Overview of SQL.
+
+1) Does ANSI recognize the data type DATE?
+Answer: Yes, ANSI (American National Standards Institute) recognizes the DATE data type. 
+        The DATE data type is commonly used in SQL databases to store date values without any time component.
+
+2) Which subdivision of SQL is used to insert values in tables?
+
+Answer: Inserting values into tables: INSERT INTO command of DML (Data Manipulation Language) is used to insert values into the table.

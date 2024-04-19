@@ -1,0 +1,26 @@
+1. Create Oracle Account
+2. Sign-up for the MySQL Newsletters, Oracle Newsletters, Java Newletters
+3. Oracle Magazine
+4. Download and Install Oracle 11g Express Edition
+5. Download and Install MS SQL Server v2022 Express Edition
+6. Download and Install MySQL v8
+7. Download and Install Oracle Linux
+8. Larry Ellison
+9. Various s/w development tools from MySQL:-
+Products of MySQL:-
+MySQL Connectors
+MySQL for Excel
+MySQL Notifier
+MySQL Enterprise Backup
+MySQL Enterprise High Availability
+MySQL Enterprise Encryption
+MySQL Enterprise Monitor
+MySQL Query Analyzer
+etc.
+10. For MySQL under Windows, the tablename is case-?sensitive
+11. Download:-
+MySQL Documentation
+Oracle Documentation
+Java Documentation
+https://docs.oracle.com
+
