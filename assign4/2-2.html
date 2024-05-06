@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Submission</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  label {
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  input[type="reset"] {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  input[type="reset"]:hover {
+    background-color: #bd2130;
+  }
+  #formValues {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+
+<form id="www">
+  <label for="firstName">First Name:</label><br>
+  <input type="text" id="firstName" name="firstName"><br>
+  <label for="lastName">Last Name:</label><br>
+  <input type="text" id="lastName" name="lastName"><br>
+  <label for="contactNo">Contact No.:</label><br>
+  <input type="text" id="contactNo" name="contactNo"><br>
+  <label for="email">Email ID:</label><br>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit" value="Submit" onclick="submitForm()">
+  <input type="reset" value="Reset">
+</form>
+
+<script>
+function submitForm() {
+  var firstName = document.getElementById("firstName").value;
+  var lastName = document.getElementById("lastName").value;
+  var contactNo = document.getElementById("contactNo").value;
+  var email = document.getElementById("email").value;
+
+  var message = "First Name: " + firstName + "<br>" +
+                "Last Name: " + lastName + "<br>" +
+                "Contact No.: " + contactNo + "<br>" +
+                "Email ID: " + email;
+
+  document.getElementById("formValues").innerHTML = message;
+  
+  // Prevent form submission
+  return false;
+}
+</script>
+
+<div id="formValues"></div>
+
+</body>
+</html>
